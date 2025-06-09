@@ -124,7 +124,7 @@ nav a.active {
   font-weight: bold;
 }
 
-/* MODULE SECTIONS */
+/* MODULE SECTION */
 .module-section {
   padding: 3rem 2rem;
   background-color: #f9f9f9;
@@ -143,6 +143,7 @@ nav a.active {
   font-size: 1.1rem;
   line-height: 1.6;
 }
+
 /* CHECKLIST */
 .checklist {
   list-style: none;
@@ -159,7 +160,7 @@ nav a.active {
   border-radius: 6px;
 }
 
-/* QUIZ SECTIONS */
+/* QUIZ SECTION */
 .quiz-section {
   padding: 3rem 2rem;
   background-color: #111;
@@ -167,12 +168,18 @@ nav a.active {
   text-align: center;
 }
 
+.quiz-section iframe {
+  margin-top: 2rem;
+  border: none;
+  border-radius: 8px;
+}
+
 .quiz-section p {
   margin-bottom: 2rem;
   font-size: 1.1rem;
 }
 
-/* Alternate Background */
+/* ALTERNATE BACKGROUND */
 .alt-bg {
   background-color: #f9f9f9;
   color: #111;
