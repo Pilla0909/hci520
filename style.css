@@ -1,4 +1,4 @@
-/* Base */
+/* General Reset */
 html {
   scroll-behavior: smooth;
 }
@@ -9,11 +9,12 @@ body {
   background-color: #000;
   color: #f0f0f0;
 }
-/* TOP NAVBAR */
+
+/* TOP NAVIGATION BAR */
 .topnav {
   position: fixed;
   top: 0;
-  left: 200px; /* to avoid overlapping the sidebar */
+  left: 200px;
   right: 0;
   height: 60px;
   background-color: #111;
@@ -42,21 +43,15 @@ body {
   color: #fff;
 }
 
-/* Adjust margins for main and nav */
-nav,
-main {
-  margin-top: 60px;
-}
-
 /* SIDEBAR */
 .sidebar {
   position: fixed;
-  top: 0;
+  top: 60px;
   left: 0;
   width: 200px;
-  height: 100%;
+  height: calc(100% - 60px);
   background-color: #111;
-  padding-top: 60px;
+  padding-top: 1rem;
   border-right: 1px solid #333;
   overflow-y: auto;
   z-index: 1000;
@@ -97,31 +92,26 @@ main {
   color: #00e676;
 }
 
-/* TOP NAV */
-nav {
-  margin-left: 200px;
-  padding: 1rem;
-  background-color: #111;
-  color: white;
-  border-bottom: 1px solid #333;
-}
-
-/* MAIN */
+/* MAIN LAYOUT */
 main {
   margin-left: 200px;
+  margin-top: 60px;
   padding: 2rem;
 }
 
-/* SECTIONS */
 section {
-  background-color: #000;
-  color: #f0f0f0;
   padding: 3rem 1rem;
   border-bottom: 1px solid #222;
+  background-color: #000;
 }
 
 h2 {
   margin-top: 0;
+  color: #ffffff;
+}
+
+p {
+  color: #dddddd;
 }
 
 /* BUTTON */
@@ -140,7 +130,7 @@ h2 {
   background-color: #651fff;
 }
 
-/* IFRAME (FOR QUIZZES) */
+/* IFRAME (for quizzes) */
 iframe {
   width: 100%;
   height: 800px;
@@ -174,17 +164,22 @@ section img {
   display: block;
 }
 
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE LAYOUT */
 @media (max-width: 768px) {
+  .topnav {
+    left: 0;
+  }
+
   .sidebar {
     position: relative;
     width: 100%;
     height: auto;
     border-right: none;
-    padding-top: 1rem;
+    top: 0;
   }
 
-  nav, main {
+  main {
     margin-left: 0;
+    margin-top: 60px;
   }
 }
