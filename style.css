@@ -70,7 +70,8 @@ body {
   color: #ccc;
   font-weight: bold;
   border-left: 4px solid transparent;
-  transition: background-color 0.3s, color 0.3s;
+  transition: 0.3s;
+  background-color: transparent; /* Add this */
 }
 
 .sidebar ul li a:hover {
