@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -5,6 +9,7 @@ body {
   color: #111;
 }
 
+/* NAVIGATION */
 nav {
   padding: 1rem 2rem;
   background-color: white;
@@ -31,6 +36,7 @@ nav a.active {
   text-decoration: underline;
 }
 
+/* INTRO SECTION */
 .intro-section {
   display: flex;
   align-items: center;
@@ -53,6 +59,14 @@ nav a.active {
   color: #444;
 }
 
+.intro-image img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* BUTTON */
 .btn {
   background-color: #5e2b87;
   color: white;
@@ -60,11 +74,106 @@ nav a.active {
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
-.intro-image img {
-  max-width: 400px;
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
+.btn:hover {
+  background-color: #491c6e;
+}
+
+/* CONTENT SECTION */
+.content-section {
+  background-color: #111;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modules-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.module-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.circle {
+  background-color: #7f3fbf;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* MODULE SECTIONS */
+.module-section {
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+  color: #111;
+  text-align: center;
+}
+
+.module-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.module-text {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+/* CHECKLIST */
+.checklist {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  max-width: 700px;
+  margin: 1.5rem auto;
+}
+
+.checklist li {
+  background-color: #eee;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+
+/* QUIZ SECTIONS */
+.quiz-section {
+  padding: 3rem 2rem;
+  background-color: #111;
+  color: white;
+  text-align: center;
+}
+
+.quiz-section p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Alternate Background */
+.alt-bg {
+  background-color: #f9f9f9;
+  color: #111;
 }
