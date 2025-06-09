@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -10,7 +12,7 @@
       color: #f0f0f0;
     }
 
-    /* TOP NAVIGATION BAR */
+    /* TOP NAVBAR */
     .topnav {
       position: fixed;
       top: 0;
@@ -92,14 +94,7 @@
       color: #00e676;
     }
 
-    nav {
-      margin-left: 200px;
-      padding: 1rem;
-      background-color: #111;
-      color: white;
-      border-bottom: 1px solid #333;
-    }
-
+    /* LAYOUT */
     main {
       margin-left: 200px;
       padding: 2rem;
@@ -174,11 +169,8 @@
         top: 0;
       }
 
-      nav, main {
-        margin-left: 0;
-      }
-
       main {
+        margin-left: 0;
         margin-top: 60px;
       }
     }
@@ -186,13 +178,149 @@
 </head>
 <body>
 
-<!-- TOP NAVIGATION BAR (OUTSIDE <style>!) -->
-<nav class="topnav">
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#content">Content</a></li>
-  </ul>
-</nav>
+  <!-- TOP NAV -->
+  <nav class="topnav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#content">Content</a></li>
+    </ul>
+  </nav>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <ul>
+      <li><a href="#pretest" id="link-pretest">Pre-Test</a></li>
+      <li><a href="#module1" id="link-module1">Module 1</a></li>
+      <li><a href="#quiz1" id="link-quiz1">Quiz 1</a></li>
+      <li><a href="#module2" id="link-module2">Module 2</a></li>
+      <li><a href="#quiz2" id="link-quiz2">Quiz 2</a></li>
+      <li><a href="#module3" id="link-module3">Module 3</a></li>
+      <li><a href="#quiz3" id="link-quiz3">Quiz 3</a></li>
+      <li><a href="#module4" id="link-module4">Module 4</a></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HOME -->
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>A quick guide to spotting red flags and fact-checking content before you share it.</p>
+      <img src="images/intro.jpg" alt="Intro Image" />
+      <a class="btn" href="#pretest">Start with Pre-Test</a>
+    </section>
+
+    <!-- CONTENT OVERVIEW -->
+    <section id="content">
+      <h2>Content Overview</h2>
+      <ul class="checklist">
+        <li>Module 1 – Define misinformation and disinformation</li>
+        <li>Module 2 – Identify red flags in misleading posts</li>
+        <li>Module 3 – Use tools to verify content</li>
+        <li>Module 4 – Evaluate credibility with a checklist</li>
+      </ul>
+    </section>
+
+    <!-- PRETEST -->
+    <section id="pretest">
+      <h2>Pre-Test</h2>
+      <p>Take this short pre-test before beginning the modules.</p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcAFEW9QdF_mI0MEefXUwjhbIzp-_Lju75jFcKDKnUX9EWfg/viewform?embedded=true">Loading…</iframe>
+      <a class="btn" href="#module1">Continue to Module 1</a>
+    </section>
+
+    <!-- MODULE 1 -->
+    <section id="module1">
+      <h2>Module 1: Misinformation vs Disinformation</h2>
+      <p><strong>Misinformation</strong> is false or inaccurate information shared without intent to deceive.</p>
+      <p><strong>Disinformation</strong> is false information shared with the intent to mislead.</p>
+      <img src="images/module 1.jpg" alt="Module 1 Image" />
+    </section>
+
+    <!-- QUIZ 1 -->
+    <section id="quiz1">
+      <h2>Quiz 1</h2>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScnrnmladTLDFR2t8lQ2iOnHQuii6bD14iiMTP3RzFNNIxNew/viewform?embedded=true">Loading…</iframe>
+      <a class="btn" href="#module2">Continue to Module 2</a>
+    </section>
+
+    <!-- MODULE 2 -->
+    <section id="module2">
+      <h2>Module 2: Spotting Red Flags</h2>
+      <p>Identify signs of misinformation like clickbait headlines, poor sources, and emotional tone.</p>
+      <img src="images/module 2.jpg" alt="Module 2 Image" />
+    </section>
+
+    <!-- QUIZ 2 -->
+    <section id="quiz2">
+      <h2>Quiz 2</h2>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdycMZx2o8BarDTkqKrUSWwgHRC39u3RK8Lq2nObCu87j504w/viewform?embedded=true">Loading…</iframe>
+      <a class="btn" href="#module3">Continue to Module 3</a>
+    </section>
+
+    <!-- MODULE 3 -->
+    <section id="module3">
+      <h2>Module 3: Verification Tools</h2>
+      <p>Use reverse image search and fact-checking websites to verify content.</p>
+      <img src="images/module 3.jpg" alt="Module 3 Image" />
+    </section>
+
+    <!-- QUIZ 3 -->
+    <section id="quiz3">
+      <h2>Quiz 3</h2>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfiS_-ZxAMWmDaM2923Biow8DN-9roOI7z6hv7CYrvTDC3NTQ/viewform?embedded=true">Loading…</iframe>
+      <a class="btn" href="#module4">Continue to Module 4</a>
+    </section>
+
+    <!-- MODULE 4 -->
+    <section id="module4">
+      <h2>Module 4: Evaluate Credibility</h2>
+      <p>Use this checklist to evaluate online content before sharing:</p>
+      <ul class="checklist">
+        <li><strong>Who:</strong> Is the author credible?</li>
+        <li><strong>What:</strong> Is the source trustworthy?</li>
+        <li><strong>When:</strong> Is the information current?</li>
+        <li><strong>Where:</strong> Are sources cited?</li>
+        <li><strong>Why:</strong> Was it meant to inform or mislead?</li>
+      </ul>
+      <a class="btn" href="#home">Back to Top</a>
+    </section>
+  </main>
+
+  <!-- SCROLL DETECTION SCRIPT -->
+  <script>
+    const sectionMap = {
+      pretest: "link-pretest",
+      module1: "link-module1",
+      quiz1: "link-quiz1",
+      module2: "link-module2",
+      quiz2: "link-quiz2",
+      module3: "link-module3",
+      quiz3: "link-quiz3",
+      module4: "link-module4"
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const id = entry.target.id;
+          const linkId = sectionMap[id];
+          const link = document.getElementById(linkId);
+          if (entry.isIntersecting) {
+            link.classList.add("done");
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    Object.keys(sectionMap).forEach((id) => {
+      const section = document.getElementById(id);
+      if (section) observer.observe(section);
+    });
+  </script>
+</body>
+</html>
 
 
 
