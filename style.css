@@ -9,6 +9,44 @@ body {
   background-color: #000;
   color: #f0f0f0;
 }
+/* TOP NAVBAR */
+.topnav {
+  position: fixed;
+  top: 0;
+  left: 200px; /* to avoid overlapping the sidebar */
+  right: 0;
+  height: 60px;
+  background-color: #111;
+  border-bottom: 1px solid #333;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+
+.topnav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+.topnav ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.topnav ul li a:hover {
+  color: #fff;
+}
+
+/* Adjust margins for main and nav */
+nav,
+main {
+  margin-top: 60px;
+}
 
 /* SIDEBAR */
 .sidebar {
